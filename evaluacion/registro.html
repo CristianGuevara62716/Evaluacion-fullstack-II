@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario - Pastelería Ignacia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo de Pastelería Ignacia"> Pastelería Ignacia</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="acciones">
+        <a href="login.html">Iniciar sesión</a>
+        <a href="registro.html">Registrar usuario</a>
+        <a href="carrito.html">🛒 carrito (<span id="contador-carrito">0</span>)</a>
+      </div>
+    </header>
+    <main>
+      <section class="formulario">
+        <h1>Registro de usuario</h1>
+        <form id="form-usuario" novalidate>
+        <label>RUN (sin puntos ni guion)
+          <input type="text" name="run">
+          <span class="error"></span>
+        </label>
+        <label>Nombre
+          <input type="text" name="nombre">
+          <span class="error"></span>
+        </label>
+        <label>Apellidos
+          <input type="text" name="apellidos">
+          <span class="error"></span>
+        </label>
+        <label>Correo
+          <input type="email" name="correo">
+          <span class="error"></span>
+        </label>
+        <label>Contraseña
+          <input type="password" name="clave">
+          <span class="error"></span>
+        </label>
+        <label>Confirmar contraseña
+          <input type="password" name="clave2">
+          <span class="error"></span>
+        </label>
+        <label>Fecha de nacimiento (opcional)
+          <input type="date" name="fecha">
+          <span class="error"></span>
+        </label>
+        <label>Región
+          <select name="region">
+            <option value="">-- Seleccione --</option>
+          </select>
+          <span class="error"></span>
+        </label>
+        <label>Comuna
+          <select name="comuna">
+            <option value="">-- Seleccione --</option>
+          </select>
+          <span class="error"></span>
+        </label>
+        <label>Dirección
+          <input type="text" name="direccion">
+          <span class="error"></span>
+        </label>
+          <button type="submit">Registrar</button>
+          <p class="exito" id="mensaje-ok"></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p><strong>Pastelería Ignacia</strong></p>
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <form>
+        <label for="Suscribete">Suscribete y Recibe Promociones</label>
+        <input type="email" id="Suscribete" placeholder="Ingresa tu correo">
+        <button type="button">Suscribirme</button>
+      </form>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/regiones.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/usuario.js"></script>
+  </body>
+</html>

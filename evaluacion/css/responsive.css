@@ -1,0 +1,17 @@
+/* Diseño responsivo: la página cambia según el ancho de la pantalla */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .hero, .detalle, .blog { grid-template-columns: 1fr; }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  header nav ul { flex-wrap: wrap; }
+  .item-carrito { grid-template-columns: 60px 1fr; }
+  body.admin { grid-template-columns: 1fr; }
+  table { display: block; overflow-x: auto; }
+  h1 { font-size: 26px; }
+}

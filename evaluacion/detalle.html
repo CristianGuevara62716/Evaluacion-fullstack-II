@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del producto - Pastelería Ignacia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo de Pastelería Ignacia"> Pastelería Ignacia</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="acciones">
+        <a href="login.html">Iniciar sesión</a>
+        <a href="registro.html">Registrar usuario</a>
+        <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+      </div>
+    </header>
+    <main>
+      <section class="detalle" id="detalle-producto"></section>
+      <section>
+        <h2>Productos relacionados</h2>
+        <div class="grid" id="relacionados"></div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p><strong>Pastelería Ignacia</strong></p>
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <form>
+        <label for="Suscribete">Suscribete y Recibe Promociones</label>
+        <input type="email" id="Suscribete" placeholder="Ingresa tu correo">
+        <button type="button">Suscribirme</button>
+      </form>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/productos.js"></script>
+  </body>
+</html>
